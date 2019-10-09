@@ -14,3 +14,6 @@ C:\code\Kattis\kattis\obj\Debug\kattis.pdb
 C:\code\Kattis\kattis\bin\Debug\System.ValueTuple.dll
 C:\code\Kattis\kattis\bin\Debug\System.ValueTuple.xml
 C:\code\Kattis\kattis\obj\Debug\kattis.csproj.CopyComplete
+D:\code\Kattis\kattis\bin\Debug\System.ValueTuple.dll
+D:\code\Kattis\kattis\bin\Debug\System.ValueTuple.xml
+D:\code\Kattis\kattis\obj\Debug\kattis.csproj.CopyComplete
