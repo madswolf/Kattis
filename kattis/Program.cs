@@ -8,27 +8,39 @@ using System.Threading.Tasks;
 
 namespace kattis
 {
-    class the
+    class StackingCups
     {
         static void Main(string[] args)
         {
             var input = Console.ReadLine();
-            while (!input.Equals("0"))
+            while (input != null)
             {
-                int setSize = int.Parse(input);
-                var set = new List<int>();
-                for (int i = 0; i < setSize; i++)
+                int count = int.Parse(input);
+                List<(int, string)> list = new List<(int, string)>();
+                
+                for (int i = 0; i < count; i++)
                 {
-                    set.Add(int.Parse(Console.ReadLine()));   
-                }
-                set = ArrangeSymmetricly(set);
-            }
-        }
+                    var line = Console.ReadLine().Split(' ');
 
-        public static List<int> ArrangeSymmetricly(List<int> set)
-        {
-            set.Sort();
-            return set;
+                    int number;
+                    if (int.TryParse(line[0], out number))
+                    {
+                        list.Add((number/2, line[1]));
+                    }
+                    else
+                    {
+                        number = int.Parse(line[1]);
+                        list.Add((number,line[0]));
+                    }
+                    
+                }
+                list.Sort((x, y) => x.Item1.CompareTo(y.Item1));
+                foreach (var item in list)
+                {
+                    Console.WriteLine(item.Item2);
+                }
+                input = Console.ReadLine();
+            }
         }
     }
 }
