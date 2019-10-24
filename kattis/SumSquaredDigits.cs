@@ -11,14 +11,14 @@ using System.Threading.Tasks;
 
 namespace kattis
 {
-    class s
+    class SumSquaredDigits
     {
-        static void Main(string[] args)
+        static void bain(string[] args)
         {
             var count = int.Parse(Console.ReadLine());
             for (int i = 0; i < count; i++)
             {
-                var line = Console.ReadLine().Split(' '); 
+                var line = Console.ReadLine().Split(' ');
                 var numberBase = int.Parse(line[1]);
                 var number = int.Parse(line[2]);
 
@@ -27,11 +27,11 @@ namespace kattis
                 while (number > 0)
                 {
                     var remainder = number % numberBase;
-                    result +=  remainder * remainder;
+                    result += remainder * remainder;
                     number /= numberBase;
                 }
 
-                Console.WriteLine(i+1 + " " + result);
+                Console.WriteLine(i + 1 + " " + result);
             }
             var input = Console.ReadLine();
         }

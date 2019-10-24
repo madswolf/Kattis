@@ -50,17 +50,22 @@
   <ItemGroup>
     <Compile Include="Avion.cs" />
     <Compile Include="bela.cs" />
+    <Compile Include="Class1.cs" />
+    <Compile Include="Parking.cs" />
     <Compile Include="EasiestProblem.cs" />
+    <Compile Include="EncodedMessage.cs" />
     <Compile Include="HeartRate.cs" />
     <Compile Include="OddManout.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Ptice.cs" />
     <Compile Include="QuickEstimates.cs" />
     <Compile Include="ReversedBinaryNumber.cs" />
     <Compile Include="ReverseRot.cs" />
     <Compile Include="RoamingRomans.cs" />
     <Compile Include="StackingCups.cs" />
     <Compile Include="StandZanzibar.cs" />
+    <Compile Include="SumSquaredDigits.cs" />
     <Compile Include="SymmetricOrder.cs" />
   </ItemGroup>
   <ItemGroup>
