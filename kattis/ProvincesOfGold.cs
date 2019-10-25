@@ -11,9 +11,9 @@ using System.Threading.Tasks;
 
 namespace kattis
 {
-    class sad
+    class ProvincesAndGold
     {
-        static void Main(string[] args)
+        static void bain(string[] args)
         {
             var line = Console.ReadLine().Split(' ');
 
@@ -38,7 +38,7 @@ namespace kattis
             }
 
             if (!output.Equals("")) output += " or ";
-            
+
             if (buyingPower >= 6)
             {
                 output += "Gold";
@@ -47,7 +47,7 @@ namespace kattis
             {
                 output += "Silver";
             }
-            else 
+            else
             {
                 output += "Copper";
             }

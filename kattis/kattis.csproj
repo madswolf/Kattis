@@ -50,7 +50,10 @@
   <ItemGroup>
     <Compile Include="Avion.cs" />
     <Compile Include="bela.cs" />
-    <Compile Include="Class1.cs" />
+    <Compile Include="PokerHand.cs" />
+    <Compile Include="ProvincesOfGold.cs" />
+    <Compile Include="Skener.cs" />
+    <Compile Include="TheAmazingHumanCannonball.cs" />
     <Compile Include="Parking.cs" />
     <Compile Include="EasiestProblem.cs" />
     <Compile Include="EncodedMessage.cs" />
@@ -65,6 +68,7 @@
     <Compile Include="RoamingRomans.cs" />
     <Compile Include="StackingCups.cs" />
     <Compile Include="StandZanzibar.cs" />
+    <Compile Include="StarArrangements.cs" />
     <Compile Include="SumSquaredDigits.cs" />
     <Compile Include="SymmetricOrder.cs" />
   </ItemGroup>
