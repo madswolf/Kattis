@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace kattis
 {
-    class LostLineup
+    class sad
     {
         static void Main(string[] args)
         {
