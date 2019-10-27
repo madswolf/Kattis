@@ -50,6 +50,8 @@
   <ItemGroup>
     <Compile Include="Avion.cs" />
     <Compile Include="bela.cs" />
+    <Compile Include="LostLineup.cs" />
+    <Compile Include="PieceOfCake.cs" />
     <Compile Include="PokerHand.cs" />
     <Compile Include="ProvincesOfGold.cs" />
     <Compile Include="Skener.cs" />

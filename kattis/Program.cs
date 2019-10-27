@@ -11,48 +11,34 @@ using System.Threading.Tasks;
 
 namespace kattis
 {
-    class sad
+    class LostLineup
     {
         static void Main(string[] args)
         {
-            var line = Console.ReadLine().Split(' ');
-
-            var goldCount = int.Parse(line[0]);
-            var silverCount = int.Parse(line[1]);
-            var copperCount = int.Parse(line[2]);
-
-            var buyingPower = goldCount * 3 + silverCount * 2 + copperCount * 1;
+            var line = int.Parse(Console.ReadLine());
+            
+            var lineup = new int[line];
+            lineup[0] = 1;
+            var input = Console.ReadLine();
+            if (!input.Equals(""))
+            {
+                var order = Array.ConvertAll(input.Split(' '), c => int.Parse(c));
+                int start = 2;
+                foreach (var placement in order)
+                {
+                    lineup[placement + 1] = start;
+                    start++;
+                }
+            }
 
             var output = "";
-            if (buyingPower >= 8)
+
+            foreach (var person in lineup)
             {
-                output = "Province";
-            }
-            else if (buyingPower >= 5)
-            {
-                output = "Duchy";
-            }
-            else if (buyingPower >= 2)
-            {
-                output = "Estate";
+                output += person + " ";
             }
 
-            if (!output.Equals("")) output += " or ";
-            
-            if (buyingPower >= 6)
-            {
-                output += "Gold";
-            }
-            else if (buyingPower >= 3)
-            {
-                output += "Silver";
-            }
-            else 
-            {
-                output += "Copper";
-            }
-
-            Console.WriteLine(output);
+            Console.WriteLine(output.Trim());
             Console.ReadLine();
         }
 
