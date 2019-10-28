@@ -11,34 +11,27 @@ using System.Threading.Tasks;
 
 namespace kattis
 {
-    class sad
+    class Beavergnaw
     {
         static void Main(string[] args)
         {
-            var line = int.Parse(Console.ReadLine());
-            
-            var lineup = new int[line];
-            lineup[0] = 1;
-            var input = Console.ReadLine();
-            if (!input.Equals(""))
+            while (true)
             {
-                var order = Array.ConvertAll(input.Split(' '), c => int.Parse(c));
-                int start = 2;
-                foreach (var placement in order)
-                {
-                    lineup[placement + 1] = start;
-                    start++;
-                }
+                var line = Console.ReadLine().Split(' ');
+
+
+                var D = int.Parse(line[0]);
+                var V = int.Parse(line[1]);
+
+                if (D == 0 && V == 0) break;
+
+                var d3 = Math.Pow(D, 3) - 6 * V / Math.PI;
+                var d = Math.Pow(d3, (1 / 3.0));
+
+
+                Console.WriteLine(d);
             }
 
-            var output = "";
-
-            foreach (var person in lineup)
-            {
-                output += person + " ";
-            }
-
-            Console.WriteLine(output.Trim());
             Console.ReadLine();
         }
 
