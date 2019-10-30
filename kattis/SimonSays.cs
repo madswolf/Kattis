@@ -11,12 +11,18 @@ using System.Threading.Tasks;
 
 namespace kattis
 {
-    class ARealChallenge
+    class SimonSays
     {
-        static void Main(string[] args)
+        static void bain(string[] args)
         {
-            var input = UInt64.Parse(Console.ReadLine());
-            Console.WriteLine(Math.Sqrt(input)*4);
+            var input = int.Parse(Console.ReadLine());
+
+            for (int i = 0; i < input; i++)
+            {
+                var line = Console.ReadLine();
+                if (line.Contains("Simon says")) Console.WriteLine(line.Replace("Simon says", "").Trim());
+            }
+
             Console.ReadLine();
         }
     }

@@ -13,10 +13,10 @@ namespace kattis
 {
     class ARealChallenge
     {
-        static void Main(string[] args)
+        static void bain(string[] args)
         {
             var input = UInt64.Parse(Console.ReadLine());
-            Console.WriteLine(Math.Sqrt(input)*4);
+            Console.WriteLine(Math.Sqrt(input) * 4);
             Console.ReadLine();
         }
     }
