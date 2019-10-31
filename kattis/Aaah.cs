@@ -11,15 +11,16 @@ using System.Threading.Tasks;
 
 namespace kattis
 {
-    class adw
+    class Aaah
     {
-        static void Main(string[] args)
+        static void bain(string[] args)
         {
-            var line = Console.ReadLine().ToLower();
 
-        
+            var line1 = Console.ReadLine();
+            var line2 = Console.ReadLine();
+            if (line2.Length > line1.Length) Console.WriteLine("no");
+            else Console.WriteLine("go");
             Console.ReadLine();
         }
-        
     }
 }

@@ -48,14 +48,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Aaah.cs" />
+    <Compile Include="ABC.cs" />
+    <Compile Include="ADifferentProblem.cs" />
+    <Compile Include="ANewAlphabet.cs" />
     <Compile Include="ARealChallenge.cs" />
     <Compile Include="Avion.cs" />
+    <Compile Include="Backspace.cs" />
     <Compile Include="BeaverGnaw.cs" />
     <Compile Include="bela.cs" />
     <Compile Include="LostLineup.cs" />
     <Compile Include="PaulAigon.cs" />
     <Compile Include="PieceOfCake.cs" />
     <Compile Include="PizzaCrust.cs" />
+    <Compile Include="PlantingTrees.cs" />
     <Compile Include="PokerHand.cs" />
     <Compile Include="ProvincesOfGold.cs" />
     <Compile Include="QuickBrownFox.cs" />
