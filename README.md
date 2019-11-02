@@ -1,2 +1,2 @@
 # Kattis
-A c# repository of kattis solutions
+A repository of kattis solutions, made with either c# or Java.
