@@ -54,6 +54,7 @@
     <Compile Include="ANewAlphabet.cs" />
     <Compile Include="ARealChallenge.cs" />
     <Compile Include="Avion.cs" />
+    <Compile Include="Babelfish.cs" />
     <Compile Include="Backspace.cs" />
     <Compile Include="BeaverGnaw.cs" />
     <Compile Include="bela.cs" />
@@ -65,6 +66,7 @@
     <Compile Include="PokerHand.cs" />
     <Compile Include="ProvincesOfGold.cs" />
     <Compile Include="QuickBrownFox.cs" />
+    <Compile Include="Recount.cs" />
     <Compile Include="SimonSays.cs" />
     <Compile Include="Skener.cs" />
     <Compile Include="TheAmazingHumanCannonball.cs" />
@@ -85,6 +87,8 @@
     <Compile Include="StarArrangements.cs" />
     <Compile Include="SumSquaredDigits.cs" />
     <Compile Include="SymmetricOrder.cs" />
+    <Compile Include="ThreeDPrinter.cs" />
+    <Compile Include="WhatFoxesSays.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
