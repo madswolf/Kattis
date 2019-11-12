@@ -10,6 +10,6 @@ for i in range(cases):
         else:
             toys[toy] = int(amount)
     print(len(toys))
-    s = list(map(itemgetter(0), sorted(toys.items(), key=itemgetter(1,0))))
+    s = list(map(itemgetter(0,1), sorted(toys.items(), key=itemgetter(1,0))))[::-1]
     for pair in s:
-        print(pair[0] + " " + str(pair[1]))
+        print(pair)
