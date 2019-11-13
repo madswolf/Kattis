@@ -10,6 +10,7 @@ for i in range(cases):
         else:
             toys[toy] = int(amount)
     print(len(toys))
-    s = list(map(itemgetter(0,1), sorted(toys.items(), key=itemgetter(1,0))))[::-1]
-    for pair in s:
-        print(pair)
+    thingsArr = sorted(toys.items(), key=lambda x: x[0])
+    thingsArr.sort(key=lambda x: -x[1])
+    for pair in thingsArr:
+        print(pair[0],pair[1])
