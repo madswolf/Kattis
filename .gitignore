@@ -9,6 +9,8 @@
 *.user
 *.userosscache
 *.sln.docstates
+*.in
+*.ans
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
@@ -283,6 +285,8 @@ node_modules/
 **/*.Server/GeneratedArtifacts
 **/*.Server/ModelManifest.xml
 _Pvt_Extensions
+***/*.ans
+***/*.in
 
 # Paket dependency manager
 .paket/paket.exe
