@@ -11,6 +11,6 @@ for line in sys.stdin:
         resultminutes = duskMinutes - dawnMinutes
     resultHour = duskHour - dawnHour
     print(" ".join(date) +" " + str(resultHour) + " hours " + str(resultminutes) + " minutes")
-
+#hello gamer
 
     
