@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29509.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Kleptography", "Kleptography.fsproj", "{AA5E1DC2-3B1D-46A6-A4CB-EAB62AD99850}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AA5E1DC2-3B1D-46A6-A4CB-EAB62AD99850}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA5E1DC2-3B1D-46A6-A4CB-EAB62AD99850}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA5E1DC2-3B1D-46A6-A4CB-EAB62AD99850}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA5E1DC2-3B1D-46A6-A4CB-EAB62AD99850}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D3B35931-9D69-4350-B472-75F06AF24914}
+	EndGlobalSection
+EndGlobal
