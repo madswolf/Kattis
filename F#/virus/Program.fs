@@ -5,23 +5,21 @@ open System
 [<EntryPoint>]
 let main argv =
     
-    let original = Console.ReadLine().ToCharArray()
-    let replication = Console.ReadLine().ToCharArray()
-    let length = min original.Length replication.Length
-
-    let func (c:char [] * char [] * int) =
-        let list1,list2,status = c
-        if status <> -1 
-        then (list1,list2,status)
-        else 
-            if list1.Length <> 0 && list2.Length <> 0 && list1.[0] = list2.[0]
-            then (list1.[1..],list2.[1..],status)
-            else (list1,list2,0)
-
-    let roundone = List.fold (fun acc item -> func acc) (original,replication,-1) [0..(length-1)] 
-    let original,replication,_ = roundone
-    let roundtwo = List.fold (fun acc item -> func acc) (Array.rev original,Array.rev replication,-1) [0..(length-1)]
+    let original = Console.ReadLine().ToCharArray()  |> List.ofArray
+    let replication = Console.ReadLine().ToCharArray() |> List.ofArray
     
-    let _,replication,_ = roundtwo
-    printfn "%A" replication.Length
+    let rec removeCommonality c = 
+        let original, replication = c
+        if List.isEmpty original || List.isEmpty replication
+        then (original,replication)
+        else 
+            if List.head original = List.head replication
+            then removeCommonality ((List.tail original), (List.tail replication))
+            else (original,replication)
+
+    let removedCommonalityFront = removeCommonality (original, replication)
+    
+    let removedCommonalityFrontAndBack = removeCommonality ((fst removedCommonalityFront |> List.rev), (snd removedCommonalityFront |> List.rev)) 
+
+    printfn "%A" (snd removedCommonalityFrontAndBack).Length
     0 // return an integer exit code
