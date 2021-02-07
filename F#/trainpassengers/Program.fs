@@ -2,6 +2,15 @@
 
 open System
 
+type multimap<'a,'b when 'a: comparison> =MMap of Map<'a,list<'b>>
+
+let canonical (m : multimap<'a,'b>) : multimap<'a,'b> when 'a: comparison and 'b: comparison = 
+  let getValueMmap (MMap m) = m
+  let map = getValueMmap m
+  Map.map(fun key value -> List.sort value) map |>
+  MMap
+
+
 [<EntryPoint>]
 let main argv =
     let limit::stops::xs = Console.ReadLine().Split ' ' |> Array.map int64 |> List.ofArray 
